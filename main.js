@@ -2,6 +2,7 @@ import header from "./src/components/header";
 import fetching_premium_numbers from "./src/components/fetching_premium_numbers.js";
 
 import trending_numbers from "./src/components/trending_numbers.js";
+import number_categories from "./src/components/number_categories.js";
 
 import footer from "./src/components/footer.js";
 
@@ -12,3 +13,5 @@ document.getElementById("highlighting-premium-grid").innerHTML =
 document.getElementById("trending-grid").innerHTML = trending_numbers();
 
 document.getElementById("footer").innerHTML = footer();
+
+document.getElementById("explore-categories").innerHTML = number_categories();

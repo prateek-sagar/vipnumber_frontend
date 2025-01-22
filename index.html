@@ -9,13 +9,15 @@
   <body>
     <div class="flex-col">
       <div class="absolute top-0 w-full" id="header"></div>
+
       <div>
         <h2 class="text-4xl mt-24 px-8 block text-center py-8 font-bold">
           Search Your Interests
         </h2>
       </div>
+
       <div
-        class="flex h-auto px-12 py-2 pb-10 items-center justify-center md:px-16 lg:px-24"
+        class="flex h-auto px-8 py-2 pb-10 items-center justify-center md:px-16 lg:px-24"
         id="search-filters"
       >
         <form
@@ -43,8 +45,8 @@
       </div>
 
       <div
-        id="highlighting-premium "
-        class="h-auto bg-gray-300 px-12 flex-col items-center justify-center w-full md:px-16 lg:px-20"
+        id="trending-numbers"
+        class="h-auto bg-gray-300 px-8 flex-col items-center justify-center w-full md:px-16 lg:px-20"
       >
         <h2 class="text-3xl block py-8 text-center font-bold">
           Trending Numbers
@@ -54,7 +56,7 @@
 
       <div
         id="highlighting-premium "
-        class="h-auto bg-gray-300 px-12 flex-col items-center justify-center w-full md:px-16 lg:px-20"
+        class="h-auto bg-gray-300 px-8 flex-col items-center justify-center w-full md:px-16 lg:px-20"
       >
         <h2 class="text-3xl block py-8 text-center font-bold">
           Highlighting Premium
@@ -62,9 +64,17 @@
         <div id="highlighting-premium-grid"></div>
       </div>
 
-      <div id="explore-categories"></div>
+      <div
+        class="px-8 md:px-16 lg:px-20 flex-col"
+        id="explore-category-section"
+      >
+        <h2 class="text-3xl font-bold flex justify-center">
+          Search By Category
+        </h2>
+        <div id="explore-categories"></div>
+      </div>
     </div>
-    <div id="footer" ></div>
+    <div id="footer"></div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
