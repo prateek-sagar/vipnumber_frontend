@@ -2,7 +2,7 @@ import heart from "../resources/heart.png";
 
 const numberEntryCard = () => `
         <div
-                    class="flex flex-col w-full h-40 bg-white rounded-lg text-3xl font-bold justify-center items-center text-green-500 hover:bg-green-500 hover:text-white cursor-pointer relative md:text-4xl lg:text-5xl lg:h-52 lg:px-4"
+                    class="flex flex-col w-full h-40 bg-white rounded-lg text-2xl font-bold justify-center items-center text-green-500 hover:bg-green-500 hover:text-white cursor-pointer relative md:text-4xl lg:text-5xl lg:h-52 lg:px-4"
                     >
                     <div class="flex w-full justify-between items-center absolute top-4 left-0 px-2 text-xl">
                       <h3 class="">2000</h3>
@@ -16,11 +16,7 @@ const numberEntryCard = () => `
                       >
                         Buy
                       </button>
-                      <button
-                        class="bg-green-500 text-white px-6 py-1 gap-2 flex rounded-full hover:bg-white hover:text-green-500"
-                      >
-                        Wishlist
-                      </button>
+                    
                     </div>
                   </div>
 `;
