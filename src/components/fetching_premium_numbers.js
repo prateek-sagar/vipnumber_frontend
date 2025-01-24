@@ -12,11 +12,15 @@ const numberEntryCard = () => `
             9985757413
             <div class="text-sm absolute bottom-4 flex gap-2">
               <button
-                class="bg-green-500 text-white px-6 py-1 gap-2 flex rounded-full hover:bg-white hover:text-green-500"
+                class="bg-green-500 text-white px-4 py-1 gap-2 flex rounded-full hover:bg-white hover:text-green-500 md:px-6"
               >
                 Buy
               </button>
-              
+              <button
+                class="bg-green-500 text-white px-4 py-1 gap-2 flex rounded-full hover:bg-white hover:text-green-500 md:px-6"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 `;
