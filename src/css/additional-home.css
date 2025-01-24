@@ -1,0 +1,24 @@
+.tns-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  z-index: 10;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.tns-controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Dark background for better visibility */
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+  left: 10px;
+  font-weight: 700;
+}
