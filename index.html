@@ -4,16 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIP NUMBER</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="./src/css/additional-home.css" />
   </head>
   <body>
     <div class="flex-col">
-      <div class="absolute top-0 w-full" id="header"></div>
+      <div class="absolute top-0 w-full z-50" id="header"></div>
+      <div id="slider-container" class="relative mt-28">
+        <div id="slider" class="w-full">
+          <div class="w-full h-full bg-red-300">
+            <img
+              class="w-full h-full object-cover object-top"
+              src="/src/resources/welcome_banner.png"
+              alt=""
+            />
+          </div>
+          <div class="w-full h-full bg-green-300">
+            <img
+              class="w-full h-full object-cover object-top"
+              src="/src/resources/largest_vipnumber_selection_banner.png"
+              alt=""
+            />
+          </div>
+          <div class="w-full h-full bg-orange-300">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/resources/lucky_number_banner.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="control-container"></div>
+      </div>
 
-      <div>
-        <h2 class="text-4xl mt-24 px-8 block text-center py-8 font-bold">
-          Search Your Interests
+      <div class="px-8 py-8">
+        <h2
+          class="text-4xl block text-center py font-bold md:text-5xl lg:text-6xl"
+        >
+          Search Your Pattern
         </h2>
+        <p class="text-xl text-center md:text-2xl lg:text-3xl">
+          Find a number or by its pattern.
+        </p>
       </div>
 
       <div
@@ -21,7 +57,7 @@
         id="search-filters"
       >
         <form
-          class="flex flex-col w-full justify-between gap-3 md:flex-row"
+          class="flex flex-col w-full justify-between gap-3 md:flex-row md:w-3/5 md:justify-around"
           action=""
           method="get"
         >
@@ -35,6 +71,7 @@
           <input
             type="text"
             class="rounded-full border px-4 py-1 border-green-600 w-full md:w-1/2 lg:w-1/4"
+            placeholder="98 9898 9898"
           />
           <input
             type="button"
@@ -46,35 +83,80 @@
 
       <div
         id="trending-numbers"
-        class="h-auto bg-gray-300 px-8 flex-col items-center justify-center w-full md:px-16 lg:px-20"
+        class="flex flex-col h-auto bg-gray-300 px-8 py-8 items-center justify-center gap-4 w-full md:px-16 lg:px-20"
       >
-        <h2 class="text-3xl block py-8 text-center font-bold">
+        <h2
+          class="text-3xl block text-center font-bold md:text-4xl lg:text-5xl"
+        >
           Trending Numbers
         </h2>
-        <div id="trending-grid"></div>
+        <div class="w-full" id="trending-grid"></div>
+      </div>
+
+      <div class="" id="home-vedio-section">
+        <video autoplay loop>
+          <source src="/src/resources/apppromo.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div
         id="highlighting-premium "
-        class="h-auto bg-gray-300 px-8 flex-col items-center justify-center w-full md:px-16 lg:px-20"
+        class="flex flex-col h-auto bg-gray-300 p-8 items-center justify-center w-full md:px-16 md:text-4xl lg:text-5xl lg:px-20"
       >
-        <h2 class="text-3xl block py-8 text-center font-bold">
+        <h2
+          class="text-3xl block text-center font-bold md:text-4xl lg:text-5xl"
+        >
           Highlighting Premium
         </h2>
-        <div id="highlighting-premium-grid"></div>
+        <div class="w-full" id="highlighting-premium-grid"></div>
       </div>
 
-      <div
-        class="px-8 md:px-16 lg:px-20 flex-col"
-        id="explore-category-section"
-      >
+      <div class="p-8 md:px-16 lg:px-20 flex-col" id="explore-category-section">
         <h2 class="text-3xl font-bold flex justify-center">
           Search By Category
         </h2>
         <div id="explore-categories"></div>
       </div>
+
+      <div
+        class="h-[50vh] flex flex-col px-8 md:px-12 lg:px-16 justify-center"
+        id="partner-section"
+      >
+        <div class="h-full flex gap-4" id="partners-container">
+          <div class="">
+            <img
+              class="w-20"
+              src="/src/resources/google-icon-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img class="w-20" src="/src/resources/coca-cola-logo.png" alt="" />
+          </div>
+          <div class="">
+            <img class="w-20" src="/src/resources/mcdonald-s-.png" alt="" />
+          </div>
+          <div class="">
+            <img
+              class="w-20"
+              src="/src/resources/google-icon-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              class="w-20"
+              src="/src/resources/airbnb-2-logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
     <div id="footer"></div>
+    <script type="module" src="./src/components/home-slider.js"></script>
+    <script type="module" src="./src/page-js/home.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
