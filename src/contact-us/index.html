@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vip Number</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+   <div id="header"></div>
+    <section
+      class="flex w-full h-[50vh] px-8 bg-cover justify-between bg-[url('..\src\resources\contact.jpeg')]"
+    >
+      <div class=" h-full flex items-center justify-center text-3xl font-bold">Contact Us</div>
+      <div class="flex  items-center">
+        <img src="..\resources\contact-us-banner.png" alt="banner" />
+      </div>
+    </section>
+
+    <!-- address -->
+    <div
+      class="flex my-8 flex-col w-full px-8 md:flex-row md:px-12 lg:px-20"
+    >
+      <div class="flex flex-col h-full gap-2">
+        <div class="flex flex-col gap-2">
+          <h1 class="font-bold pt-3 text-xl text-blue-950 pb-2">SUPPORT</h1>
+          <div class="flex flex-col gap-3">
+            <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
+            <p>
+              005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar
+              East, Thane, Maharashtra - 401105
+            </p>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>1234567890</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>support@vipnumber.com</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>sales@vipnumber.com</div>
+          </div>
+        </div>
+
+        <h1 class="font-bold pt-3 text-xl text-blue-950">SALES</h1>
+        <div class="flex flex-col gap-3">
+          <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
+          <p>
+            005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
+            Thane, Maharashtra - 401105
+          </p>
+        </div>
+        <div class="flex gap-1">
+          <div><i class="fa-brands fa-whatsapp"></i></div>
+          <div><i class="fa-solid fa-phone"></i></div>
+          <div>1234567890</div>
+        </div>
+        <div class="flex gap-1">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <div>support@vipnumber.com</div>
+        </div>
+        <div class="flex gap-1">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <div>sales@vipnumber.com</div>
+        </div>
+      </div>
+      <section class="flex justify-center h-full items-center">
+        <form class="bg-white p-8 rounded-lg shadow-lg w-full max-w-full">
+          <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+
+          <!-- Name Input -->
+          <div class="flex gap-2">
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Full Name</label
+              >
+              <div class="flex justify-center relative">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="pl-8 p-3 w-full border border-gray-300"
+                  placeholder="Enter your name"
+                  required
+                />
+                <i
+                  class="fas fa-user absolute left-2 top-1/2 -translate-y-1/2"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email Address</label
+              >
+
+              <div class="flex justify-center relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="pl-8 p-3 w-full border border-gray-300"
+                  placeholder="Enter your email"
+                  required
+                />
+                <i
+                  class="fa-solid fa-envelope absolute left-2 top-1/2 items-center -translate-y-1/2"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <div class="mb-4">
+              <label
+                for="telephone"
+                class="block text-sm font-medium text-gray-700"
+                >Telephone</label
+              >
+              <div class="flex justify-center relative">
+                <input
+                  type="number"
+                  id="telephone"
+                  name="telephne"
+                  class="pl-8 p-3 w-full border border-gray-300"
+                  placeholder="Enter your 10 digit mobile number"
+                  required
+                />
+                <i
+                  class="fa-solid fa-phone absolute left-2 top-1/2 items-center -translate-y-1/2"
+                ></i>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="company name"
+                class="block text-sm font-medium text-gray-700"
+                >Company Name</label
+              >
+              <div class="flex justify-center relative">
+                <input
+                  type="text"
+                  id="company name"
+                  name="company name"
+                  class="pl-8 p-3 w-full border border-gray-300"
+                  placeholder="Enter your company name"
+                  required
+                />
+                <i
+                  class="fa-solid fa-building absolute left-2 top-1/2 items-center -translate-y-1/2"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Message Textarea -->
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <div class="flex justify-center relative">
+              <textarea
+                id="message"
+                name="message"
+                class="pl-8 p-3 w-full border border-gray-300"
+                placeholder="Enter your message"
+                rows="4"
+                required
+              ></textarea>
+              <i
+                class="fa-solid fa-file-lines absolute left-2 top-6 -translate-y-2"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-gray-500 text-white p-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <div class="px-8 my-8 flex flex-col gap-8 md:flex-row md:px-12 lg:px-20">
+      <div class="border border-gray-300 rounded-lg p-8 hover:shadow-lg cursor-pointer">
+        <h1 class="pb-8 font-bold">HEAD OFFICE</h1>
+        <div class="flex flex-col gap-3">
+          <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
+          <p>
+            005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
+            Thane, Maharashtra - 401105
+          </p>
+          <div class="flex gap-1">
+            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>1234567890</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>support@vipnumber.com</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>sales@vipnumber.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-8 hover:shadow-lg cursor-pointer">
+        <h1 class="pb-8 font-bold">BRANCH OFFICE</h1>
+        <div class="flex flex-col gap-3">
+          <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
+          <p>
+            005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
+            Thane, Maharashtra - 401105
+          </p>
+          <div class="flex gap-1">
+            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>1234567890</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>support@vipnumber.com</div>
+          </div>
+          <div class="flex gap-1">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>sales@vipnumber.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script
+      src="https://kit.fontawesome.com/088be698bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../../main.js"></script>
+  </body>
+</html>
