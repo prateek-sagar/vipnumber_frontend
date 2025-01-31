@@ -22,3 +22,59 @@
   left: 10px;
   font-weight: 700;
 }
+
+
+@keyframes scroll {
+  to {
+      transform: translateX(-50);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  border-radius: 18px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 100px;
+  position: relative;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Infinite scrolling effect */
+.scroll-content {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  width: max-content;
+}
+
+.scroll-content img {
+  margin-right: 80px; /* Adds spacing between images */
+}
+
+
+.scroll-container::before,
+.scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px; /* Adjust width for more fade */
+  height: 100%;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+}
