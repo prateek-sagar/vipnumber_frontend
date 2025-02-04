@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .step{
+            display: none;
+
+        }
+
+        .active {
+            display: block;
+        }
+
+    </style>
 <link rel="stylesheet" href="../index.css">
 </head>
 <body>
@@ -43,13 +54,15 @@
                 toggleState.textContent = "OFF";
             }
         });
+    
+
     </script>
-    <div class="h-[100vh] w-full flex justify-center items-center bg-gray-100 p">
+    <div class="h-[100vh] w-full flex justify-center items-center bg-[#36384d] ">
 
       
-        <div class="rounded-[20px] h-[60vh] w-[60vw] flex flex-col p-4 lg:flex-row-reverse outline">
+         <div class="rounded-[20px] h-[60vh] w-[60vw] flex flex-col p-4 lg:flex-row-reverse outline bg-white"> 
             
-            <div class="w-full rounded-[20px] lg:w-1/2">
+            <div class="w-full rounded-[20px] ">
                 <!-- login form when this state is active -->
                 <!-- login button for active the form or state and deactive adjacent form -->
                 Login
@@ -63,8 +76,8 @@
                     </div>
                     <div class="input-group flex flex-col justify-center relative">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" name="password" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Password">
-                        <i class="fa-solid fa-envelope absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        <input type="password" id="password" name="password"  class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Password">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
                         
                     </div>
                     <div class="flex justify-between mt-4 text-cyan-50">
@@ -72,13 +85,62 @@
                         <button type="Submit" class="btn px-3 border rounded-lg bg-red-700">Forget Password</button>
             
                     </div>
-                    </form>
+                </form>
 
             </div>
-            <div class="w-full flex flex-col lg:w-1/2" ></div>
+            <div class="w-full flex flex-col lg:w-1/2">
                 <!-- signup form when this state is active -->
                 <!-- signup button for active the form or state and deactive adjacent from -->
                 Signup
+                <form id="signupform " class="step step-1 active" action="" method="POST" class="w-[100%] bg-pink-100 ">
+                  <div>
+                    <div class="input-group  flex flex-col justify-center relative">
+                        <label for="userid">Full Name</label>
+                        <input type="text" id="userid" name="userid" name="userid" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Full Name">
+                        <i class="fa-solid fa-user absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="input-group flex flex-col justify-center relative">
+                        <label for="password">Create Password</label>
+                        <input type="password" id="create_password" name="password"  class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Password">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="input-group flex flex-col justify-center relative">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" id="con_password" name="password" class="pl-6 p-3 w-full border border-gray-300" placeholder="Confirm Your Password">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="flex justify-between mt-4 text-cyan-50">
+                        <div id="took-next-step" class="btn px-3 border rounded-lg bg-blue-950 cursor-pointer   "> Next </div>
+                    </div>
+                 </div>
+                 <div>
+                    <div id="signupform" class="step step-2 input-group flex flex-col justify-center relative overflow-hidden    bg-gray-200">
+                        <label for="mobile_number">Mobile Number</label>
+                        <input type="Nummber" id="number" name="mob_number" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Number ">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="input-group flex flex-col justify-center relative">
+                        <label for="email">Email</label>
+                        <input type="Nummber" id="Email" name="Email" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Email ">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="input-group flex flex-col justify-center relative">
+                        <label for="password">Email</label>
+                        <input type="Nummber" id="Email" name="Email" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Email ">
+                        <i class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div> 
+
+                    <div class="flex justify-between mt-4 text-cyan-50">
+                        <div id="took-previous-step" class="btn px-3 border rounded-lg bg-blue-950 "> Previous </div>
+                    </div>
+                 </div> 
+                </form>
             </div>
         </div>
     </div>
@@ -89,5 +151,6 @@
       src="https://kit.fontawesome.com/088be698bc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/src/components/script.js/signupform.js"></script>
 </body>
 </html>
