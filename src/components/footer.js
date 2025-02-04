@@ -1,7 +1,7 @@
 export default function footer() {
   return `
     
-    <div class="w-full h-1/2 flex bg-white px-8 py-10 lg:px-60">
+    <div class="w-full h-1/2 flex bg-white px-8 py-10 lg:px-20">
         <div class = "flex justify-between flex-col w-full lg:flex-row">
             <div class="">
                 <h3 class = "text-2xl my-2 text-[#474b67] font-bold ">QUICK LINKS</h3>
