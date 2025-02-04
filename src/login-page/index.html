@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="../index.css">
+</head>
+<body>
+   
+
+    <!-- log-in section -->
+
+    <h1 class="text-center mt-10 text-3xl font-bold text-blue-950">Log In</h1>
+    
+    <div class="flex items-center space-x-4  justify-center h-[100px] absolute w-full">
+        <!-- Label for the toggle button -->
+        <span class="text-lg">ADMIN</span>
+    
+        <!-- Toggle button container -->
+        <label for="toggle" class="relative inline-block w-12 h-6">
+            <input type="checkbox" id="toggle" class="peer hidden" />
+    
+            <!-- Background of the toggle -->
+            <span class="absolute inset-0 bg-gray-300 rounded-full transition-all peer-checked:bg-blue-500"></span>
+    
+            <!-- Circle of the toggle -->
+            <span class="absolute top-0 left-0 w-6 h-6 bg-white rounded-full transition-all peer-checked:left-6"></span>
+        </label>
+    
+        <!-- Text to indicate toggle state -->
+        <span id="toggle-state" class="text-sm text-gray-600">OFF</span>
+    </div>
+    
+    <script>
+        const toggle = document.getElementById('toggle');
+        const toggleState = document.getElementById('toggle-state');
+        
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                toggleState.textContent = "ON";
+            } else {
+                toggleState.textContent = "OFF";
+            }
+        });
+    </script>
+    <div class="h-[100vh] w-full flex justify-center items-center bg-gray-100 p">
+
+      
+        <div class="rounded-[20px] h-[60vh] w-[60vw] flex flex-col p-4 lg:flex-row-reverse outline">
+            
+            <div class="w-full rounded-[20px] lg:w-1/2">
+                <!-- login form when this state is active -->
+                <!-- login button for active the form or state and deactive adjacent form -->
+                Login
+                
+                <form id="loginform" action="/login" method="POST" class="w-[100%] bg-pink-100 ">
+                    <div class="input-group  flex flex-col justify-center relative">
+                        <label for="userid">User Id</label>
+                        <input type="text" id="userid" name="userid" name="userid" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Registered Mobile No/Email">
+                        <i class="fa-solid fa-envelope absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="input-group flex flex-col justify-center relative">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" name="password" class="pl-6 p-3 w-full border border-gray-300" placeholder="Enter Your Password">
+                        <i class="fa-solid fa-envelope absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"></i>
+                        
+                    </div>
+                    <div class="flex justify-between mt-4 text-cyan-50">
+                        <button type="Submit" class="btn px-3 border rounded-lg bg-blue-950 ">Login</button>
+                        <button type="Submit" class="btn px-3 border rounded-lg bg-red-700">Forget Password</button>
+            
+                    </div>
+                    </form>
+
+            </div>
+            <div class="w-full flex flex-col lg:w-1/2" ></div>
+                <!-- signup form when this state is active -->
+                <!-- signup button for active the form or state and deactive adjacent from -->
+                Signup
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="../../main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/088be698bc.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
