@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.HERO{
+    display: flex;
+    background-image: url(../resources/contact.jpeg);
+    background-size: 100%;
+}
+.left-section{
+    
+    height: 300px;
+    width: 50%;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.right-section{
+    
+    height: 300px;
+
+    width: 50%;
+}
+.middle-section{
+    padding: 80px;
+    background-color: #f1f1f3;
+    display: flex;
+}
+
+.middle-left-section{
+    
+    width: 20%;
+}
+.sum-total{
+    
+    width: 100%;
+    background-color: rgb(100, 204, 100);
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    
+    justify-content: flex-start;
+
+}
+.sum{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+input{
+    padding: 10px;
+    width: 200px;
+    
+}
+
+
+
+
+.accordion {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+.accordion-content input {
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: aquamarine;
+    
+}
+.middle-right-section{
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ccc;
+
+}
+.middle-section-filter{
+    display: flex;
+    padding-top: 10px;
+    color: rgb(34, 212, 34);
+    font-weight: 600;
+    gap: 1rem;
+}
+.search-menu{
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    border-color: rgb(6, 26, 212);
+}
+.num-criteria{
+    width: 40%;
+    
+    
+}
+.search-bar-number{
+    
+    display: flex;
+    width: 100%;
+    gap: 1rem;;
+
+}
+.search-bar input{
+    width:100%;
+    
+}
+button{
+    padding: 10px;
+    width: 10%;
+}
