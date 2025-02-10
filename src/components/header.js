@@ -24,6 +24,9 @@ export default function header() {
                         </a>
                     </li>
                     <li class="">
+                        <a href="/contact-us">Contact Us</a>
+                    </li>
+                    <li class="">
                         Login/SignUp
                     </li>
                     <li class="">
