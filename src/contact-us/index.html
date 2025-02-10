@@ -13,7 +13,7 @@
     <section
       class="flex w-full h-[50vh] px-8 bg-cover justify-between bg-[url('..\src\resources\contact.jpeg')]">
     
-      <div class=" h-full flex items-center justify-center text-3xl font-bold">Contact Us</div>
+      <div class="pl-11 h-full flex items-center justify-center text-3xl font-bold">Contact Us</div>
       <div class="flex  items-center">
         <img src="..\resources\contact-us-banner.png" alt="banner" />
       </div>
@@ -21,7 +21,7 @@
 
     <!-- address -->
     <div
-      class="flex my-8 flex-col w-full px-8 md:flex-row md:px-12 lg:px-20"
+      class="flex my-8 justify-between flex-col w-full px-8 md:flex-row md:px-12 lg:px-20"
     >
       <div class="flex flex-col h-full gap-2">
         <div class="flex flex-col gap-2">
@@ -30,7 +30,7 @@
             <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
             <p>
               005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar
-              East, Thane, Maharashtra - 401105
+               - 401105
             </p>
           </div>
           <div class="flex gap-1">
@@ -52,8 +52,7 @@
         <div class="flex flex-col gap-3">
           <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
           <p>
-            005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
-            Thane, Maharashtra - 401105
+            005, Building no.12-B, Sangeet complex, Jesal Park,Maharashtra - 401105
           </p>
         </div>
         <div class="flex gap-1">
@@ -70,7 +69,7 @@
           <div>sales@vipnumber.com</div>
         </div>
       </div>
-      <section class="flex justify-center h-full items-center">
+      <section class="flex justify-center h-full items-center w-[100%] md: lg:64rem ">
         <form class="bg-white p-8 rounded-lg shadow-lg w-full max-w-full">
           <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
 
@@ -191,14 +190,14 @@
       </section>
     </div>
 
-    <div class="px-8 my-8 flex flex-col gap-8 md:flex-row md:px-12 lg:px-20">
+    <div class="px-8 my-8 flex flex-col gap-8 md:flex-row md:px-12 lg:px-20 ">
       <div class="border border-gray-300 rounded-lg p-8 hover:shadow-lg cursor-pointer">
         <h1 class="pb-8 font-bold">HEAD OFFICE</h1>
         <div class="flex flex-col gap-3">
           <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
           <p>
             005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
-            Thane, Maharashtra - 401105
+            - 401105
           </p>
           <div class="flex gap-1">
             <div><i class="fa-brands fa-whatsapp"></i></div>
@@ -215,31 +214,31 @@
           </div>
         </div>
       </div>
-      <div class="border border-gray-300 rounded-lg p-8 hover:shadow-lg cursor-pointer">
-        <h1 class="pb-8 font-bold">BRANCH OFFICE</h1>
+     <div class="border border-gray-300 rounded-lg p-8 hover:shadow-lg cursor-pointer justify-between w-[50%]">
+        <h1 class="pb-8 font-bold">Map</h1>
         <div class="flex flex-col gap-3">
-          <h2><i class="fa-solid fa-location-dot"></i> Vip Number</h2>
-          <p>
-            005, Building no.12-B, Sangeet complex, Jesal Park, Bhayandar East,
-            Thane, Maharashtra - 401105
-          </p>
-          <div class="flex gap-1">
-            <div><i class="fa-brands fa-whatsapp"></i></div>
-            <div><i class="fa-solid fa-phone"></i></div>
-            <div>1234567890</div>
-          </div>
-          <div class="flex gap-1">
-            <div><i class="fa-solid fa-envelope"></i></div>
-            <div>support@vipnumber.com</div>
-          </div>
-          <div class="flex gap-1">
-            <div><i class="fa-solid fa-envelope"></i></div>
-            <div>sales@vipnumber.com</div>
-          </div>
+          <div id="map" class="w-full h-90vh" ></div>
+          
+          
         </div>
-      </div>
+      </div> 
     </div>
     <div id="footer"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+      function initMap() {
+          var location = { lat: 37.7749, lng: -122.4194 }; // Example: San Francisco, USA
+          var map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 10,
+              center: location
+          });
+
+          var marker = new google.maps.Marker({
+              position: location,
+              map: map
+          });
+      }
+  </script>
     <script
       src="https://kit.fontawesome.com/088be698bc.js"
       crossorigin="anonymous"
