@@ -15,3 +15,7 @@
 .heading-secondary {
   @apply text-2xl lg:text-3xl font-semibold;
 }
+
+.vipnumber-padding-horizontal {
+  @apply px-6 md:px-12 lg:px-24 xl:px-36;
+}
