@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>premium numbers</title>
+    <link rel="stylesheet" href="../premium-number/style.css" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="h-[50vh] md:h-[60vh] lg:h-[] w-full bg-no-repeat">
+      <img
+        class="h-full object-cover object-[30%_50%]"
+        src="../resources/largest_vipnumber_selection_banner.png"
+        alt=""
+      />
+    </div>
+    <div class="middle-section">
+      <div class="middle-left-section">
+        <div class="sum-totl">
+          <div class="accordion">
+            <div class="accordion-header">SEARCH by SUM TOTAL</div>
+            <div class="accordion-content">
+              <input type="text" placeholder="Enter Number Like 12 or 3" />
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-header">SEARCH by SUM TOTAL</div>
+              <div class="accordion-content">
+                <input type="text" placeholder="Enter Number Like 12 or 3" />
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-header">SEARCH by SUM TOTAL</div>
+              <div class="accordion-content">
+                <input type="text" placeholder="Enter Number Like 12 or 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-right-section">
+        <div class="search-bar-number">
+          <select class="search-menu num-criteria" placeholder="number-search">
+            <option value="">End With</option>
+            <option value="">Any Where</option>
+            <option value="">Start With</option>
+          </select>
+          <input
+            type="text"
+            class="num-criteria search-menu"
+            placeholder="enter number only"
+          />
+          <button class="search-btn search-menu">Search Number</button>
+        </div>
+        <div class="middle-section-filter">
+          <div class="sort">sort by</div>
+          <div class="price">price low to high</div>
+          <div class="price">price high to low</div>
+        </div>
+
+        <div class="w-full" id="premium-Num"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", function () {
+          var content = this.nextElementSibling; // Select the next sibling element (accordion-content)
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      });
+    </script>
+
+    <script type="module" src="premiumNum.js"></script>
+    <script type="module" src="../../main.js"></script>
+  </body>
+</html>
