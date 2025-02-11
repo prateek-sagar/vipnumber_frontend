@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top-section{
+    background-color: rgb(15, 109, 15);
+    height: 100px;
+    width: full;
+}

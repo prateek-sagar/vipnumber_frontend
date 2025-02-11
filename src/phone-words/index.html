@@ -11,11 +11,12 @@
     <div id="header"></div>
     <div class="h-[400px] w-[100%]">
       <div
-        class=" w-full bg-cover bg-no-repeat  h-[50vh]"
+        class=" w-full bg-cover bg-no-repeat flex justify-between px-6 md:px-12 lg:px-24 xl:px-36  h-[50vh]"
         style="background-image: url(../resources/contact.jpeg)">
-        <div class=" h-full flex items-center justify-center text-3xl font-bold text-left">PHONE WORDS</div>
-        
-      
+        <div class=" h-full flex items-center justify-left text-3xl font-bold text-left">PHONE WORDS</div>
+        <div class=" flex items-center">
+          <img src="../resources/PHONE-WORDS.png" alt="phone word img">
+        </div>
 
     </div>
     <div class="h-[350px] flex flex-col items-center justify-center bg-gradient-to-r from-[#7FFFC6] to-[#08eca0] text-white">
@@ -27,21 +28,23 @@
             SUBMIT
         </button>
     </div>
-    <div class="text-center bg-slate-100 h-[100vh] px-20 " >
-        <div class="p-20 pt-8 pb-8">
-        <h2 class="text-2xl font-normal text-[#474b67]">CUSTOMIZE</h2>
-        <h1 class="text-5xl font-bold text-[#474b67]">YOUR NUMBERS</h1>
+    <div class="text-center bg-slate-100 h-auto px-20 py-10 " >
+        <div class="p-20 sm:p-10 md:p-12 lg:p-20 pt-8 pb-8">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-normal text-[#474b67]">CUSTOMIZE</h2>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#474b67]">YOUR NUMBERS</h1>
         </div>
-       <div class="flex gap-7">
-        <div class="grid grid-flow-row  grid-cols-3 gap-4 w-[80%]  cursor-pointer ">
+       <div class="flex md:flex-wrap lg:flex-nowrap gap-7 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full  cursor-pointer ">
 
-                <div class="p-5 bg-white rounded-lg  hover:bg-green-500 justify-around  h-[200px] w-[300px] shadow-2xl ">
-                   <div class="flex gap-[50px]">
-                    <h3 class="font-semibold  text-[20px] text-left">NUMEROLOGY<br>NUMBERS</h3>
-                    <img src="../resources/number01.png"  class="w-20 aspect-square object-contain "  alt="astro">
-                   </div>
-                    <P class="text-[16px]  font-normal float-left text-left">Have your star in your<br> number</P>
-                </div>
+               
+                <div class="p-5 bg-white rounded-lg hover:bg-green-500   justify-around  h-[200px] w-[300px] shadow-2xl">
+                  <div class="flex gap-[50px]">
+                   <h3 class="font-semibold  text-[20px] text-left">NUMEROLOGY<br>NUMBERS</h3>
+                   <img src="../resources/number01.png"  class="w-20 aspect-square object-contain "  alt="astro">
+                  </div>
+                   <P class="text-[16px]  font-normal float-left text-left">Have your star in your<br>number</P>
+               </div>
+
 
                 <div class="p-5 bg-white rounded-lg hover:bg-green-500   justify-around  h-[200px] w-[300px] shadow-2xl">
                     <div class="flex gap-[50px]">
@@ -83,16 +86,21 @@
                      <P class="text-[16px]  font-normal float-left text-left">Get your favorites in your phone<br> number</P>
                  </div>
                 </div>
-                 <div class="w-[20%]">
-                    <img src="../resources/mobile.jpg"    alt="mobile">
-                 </div>
-                
+                 
+            <div class="sm:w-[20%] w-full hidden lg:block  relative">
+              <!-- Image -->
+              <img src="../resources/mobile.jpg" alt="mobile" class="w-full h-full object-contain" />
+              
+              <!-- Video -->
+              <video controls autoplay name="media" class="absolute pb-24 pl-3 bg-transparent top-0 left-0 w-[95%] h-full object-contain overflow-clip">
+                <source src="https://www.numberwale.com/assets/img/DeliveryAnimation1.mp4" type="video/mp4">
+              </video>
             </div>
-
-        
-    </div>
+       </div>
+            
+      </div>
     <div>
-        <img src="../resources/Phonewords gif.gif"  class="w-full h-auto" alt="phoneordgif">
+        <img src="../resources/Phonewords gif.gif"  class="w-full h-auto " alt="phoneordgif">
      </div>
      <div id="footer"></div>
      <script type="module" src="../../main.js"></script>
