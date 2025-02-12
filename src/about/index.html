@@ -1,12 +1,63 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    About
+  <body class="font-roboto">
+    <div id="header"></div>
+    <section
+    class="flex w-full h-[50vh] px-8 bg-cover justify-between item bg-center bg-[url('..\src\resources\contact.jpeg')]">
+  
+    <div class="pl-11 h-full flex items-center justify-center text-3xl font-bold">About Us</div>
+    <div class="flex  items-center">
+      <img src="../resources/about_us__1rbg.png" alt="banner" />
+    </div>
+    </section>
+  
+    <!-- About Us Section -->
+    <section class="px-8 py-16 bg-slate-100">
+      <h1 class="text-5xl font-bold text-center text-blue-900 pb-8">About Us</h1>
+  
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Image Section -->
+        <div class="w-full lg:w-1/2">
+          <img src="../resources/i.webp" alt="aboutimg" class="object-cover w-full h-80 lg:h-auto rounded-lg shadow-md" />
+        </div>
+  
+        <!-- Text Section -->
+        <div class="w-full lg:w-1/2">
+          <p class="bg-green-200 p-6 text-base lg:text-lg text-gray-800 rounded-lg shadow-md">
+            At VIPNumber, we specialize in providing premium, customized mobile numbers that elevate your identity and enhance your business or personal life. With a vast collection of VIP and fancy mobile numbers, we cater to individuals and businesses seeking a unique, personalized number that makes a lasting impression.
+  
+            We understand the importance of your phone number in today's digital world—it’s more than just a contact; it's a representation of who you are. Whether it's a lucky number, a memorable date, or a unique sequence, we make it easy for you to choose the number that fits your style and needs.
+  
+            Our online platform ensures a seamless experience, offering a variety of numbers, including mirror numbers, repeating patterns, numerology-based choices, and more. We also cater to families and businesses, allowing you to select matching numbers with ease.
+  
+            At VIPNumber, we prioritize customer satisfaction, providing support throughout the process—from selection to registration—ensuring that your experience is smooth, fast, and hassle-free.
+  
+            Explore our wide selection of VIP numbers today and give your mobile number the importance it deserves.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Google Maps Section -->
+    <section class="px-8 py-16 bg-white">
+      <h2 class="text-3xl font-semibold text-center text-blue-900 mb-6">Visit Us</h2>
+      <div class="w-full shadow-lg rounded-lg overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3499.484128930855!2d77.2641238!3d28.7050744!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1739253867064!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  
+    
+  
+   
+   <div id="footer"></div>
   </body>
-</html>
+  
+  <script type="module" src="../../main.js"></script>
+</html>  
