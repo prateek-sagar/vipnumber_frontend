@@ -14,9 +14,9 @@ const based = {
   },
 };
 
-export default function filterTrigger() {
+export default function advanceSearchTrigger() {
   return `
-        <div id="filter-trigger" class="mx-3 px-4 bg-gray-300 flex justify-center items-center gap-1 rounded-full cursor-pointer ">
+        <div id="advance-search-trigger" class="mx-3 px-4 bg-gray-300 flex justify-center items-center gap-1 rounded-full cursor-pointer ">
             <img src="${filterIcon}" class="w-4" />
             Advance Search
         </div>

@@ -1,12 +1,12 @@
 const mapping_numbers = (number) =>
-  ` <div class="bg-white flex justify-center shadow-md shadow-gray-300 items-center rounded-sm py-2 text-[0.875rem]">
+  ` <div class="bg-white flex justify-center shadow-[0_0_10px_-4px] shadow-gray-700 items-center cursor-pointer hover:bg-primary hover:text-white rounded-full font-semibold py-2 px-2 text-[14px]">
         ${number}
     </div> 
 `;
 
 export default function number_categories() {
   return `
-    <div class="grid py-4 grid-cols-2 gap-x-8 cursor-pointer gap-y-4 md:grid-cols-3 lg:grid-cols-4">
+    <div class="flex flex-wrap gap-x-4 gap-y-2 ">
         ${categories()}
     </div>
     `;

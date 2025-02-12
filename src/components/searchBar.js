@@ -1,9 +1,9 @@
-import filterTrigger from "./filterTrigger";
+import advanceSearchTrigger from "./advanceSearchTrigger";
 
 export default function searchBar() {
   return `
     <div>
-        <div class="flex flex-col md:flex-row w-full gap-2">
+        <div class="flex flex-wrap w-full gap-2">
             <select
               class="relative flex w-[300px] bg-white border rounded-full border-green-600 hover:border-green-600 px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline"
             >
@@ -16,13 +16,13 @@ export default function searchBar() {
               class="rounded-full border px-4 py-1 border-green-600 w-[300px]"
               placeholder="e.g. 9898"
             />
-            <div class="flex">
+            <div class="flex flex-wrap">
                 <a
                     href="/numbers-list"
                     class="flex py-1 px-4 justify-center items-center rounded-full w-fit text-base text-white border border-green-500 bg-green-500 cursor-pointer"
                     >Search</a
                 >
-                ${filterTrigger()}
+                ${advanceSearchTrigger()}
             </div>
           </div>
     </div>  
