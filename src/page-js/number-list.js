@@ -1,20 +1,25 @@
+import filters from "../components/filters";
 import numberEntries from "../components/numberEntries";
 import searchBar from "../components/searchBar";
 import sortFilter from "../components/sortFilter";
 
 document.getElementById("premium-num").innerHTML = numberEntries();
 document.getElementById("search-bar").innerHTML = searchBar();
-
+document.getElementById("filters").innerHTML = filters();
 const sortFilterContainer = document.getElementById("sort-filter");
-
-console.dir(sortFilterContainer);
-
-const sortFilterTogglers = sortFilterContainer.querySelectorAll("toggler");
 
 sortFilterContainer.innerHTML = sortFilter();
 
+const sortFilterTogglers = sortFilterContainer.querySelectorAll(".toggler");
+
 sortFilterTogglers.forEach((toggler, index) => {
   toggler.addEventListener("click", () => {
-    console.log("Number");
+    sortFilterTogglers.forEach((toggle) => {
+      toggle.classList.remove("active-toggle");
+    });
+
+    toggler.classList.add("active-toggle");
   });
 });
+
+
