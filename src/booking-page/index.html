@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>vip number</title>
+</head>
+
+<body class="font-roboto">
+    <div id="header"></div>
+    <section
+      class="flex w-full h-[50vh] px-8 bg-cover justify-between item bg-center bg-[url('..\src\resources\contact.jpeg')]">
+      <div class="pl-11 h-full flex items-center justify-center text-3xl font-bold">
+        Book Number
+      </div>
+      <div class="flex items-center">
+        <img src="../resources/demo.png" alt="banner" />
+      </div>
+    </section>
+
+   
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
+            <h2 class="text-5xl font-bold text-green-500 text-left">BOOK NOW</h2>
+            <p class="text-left text-gray-600">VIP Number - 9090591666</p>
+    
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Name*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-user text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Enter your Name" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">E-Mail*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-envelope text-gray-500 mr-2"></i>
+                        <input type="email" placeholder="Enter your E-Mail" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Mobile No*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-phone text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Enter your 10-digit Mobile Number" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Account Type*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-user-circle text-gray-500 mr-2"></i>
+                        <select class="w-full outline-none bg-transparent">
+                            <option value="">-- Select --</option>
+                            <option value="personal">Personal</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Password*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-lock text-gray-500 mr-2"></i>
+                        <input type="password" placeholder="Enter your Password" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Confirm Password*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-lock text-gray-500 mr-2"></i>
+                        <input type="password" placeholder="Confirm Password" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Flat / Building / Area*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-home text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Enter your Address 01" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Street / City*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-city text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Enter your Address 02" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">Pin Code*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-map-marker-alt text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Enter your post code" class="w-full outline-none">
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <label class="block text-sm font-medium text-gray-700">State*</label>
+                    <div class="flex items-center border rounded-md p-2">
+                        <i class="fas fa-map text-gray-500 mr-2"></i>
+                        <select class="w-full outline-none bg-transparent">
+                            <option value="">-- Select --</option>
+                            <option value="state1">State 1</option>
+                            <option value="state2">State 2</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600">
+                        REQUEST OTP
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>   
+    
+      <div id="footer"></div>
+    <script
+      src="https://kit.fontawesome.com/088be698bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../../main.js"></script>
+</body>
+
+</html>
