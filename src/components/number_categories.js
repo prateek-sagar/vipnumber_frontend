@@ -1,5 +1,5 @@
 const mapping_numbers = (number) =>
-  ` <div class="bg-white flex justify-center shadow-[0_0_10px_-4px] shadow-gray-700 items-center cursor-pointer hover:bg-primary hover:text-white rounded-full font-semibold py-2 px-2 text-[14px]">
+  ` <div class="bg-white flex justify-center shadow-[0_0_10px_-4px] shadow-gray-700 items-center cursor-pointer hover:bg-primary hover:text-white rounded-full font-semibold py-2 px-2 text-[14px] number-category">
         ${number}
     </div> 
 `;
