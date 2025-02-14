@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
+      },
       colors: {
         primary: {
           DEFAULT: "rgb(35,200,100)",
