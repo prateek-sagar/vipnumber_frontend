@@ -1,0 +1,17 @@
+.sidebar-btn {
+  width: 80%;
+  color: white;
+  cursor: pointer;
+}
+.sidebar-btn:hover {
+  background-color: white;
+  border-left: 4px solid rgb(35, 200, 100);
+  color: rgb(35, 200, 100);
+}
+
+.active-sidebar-btn {
+  width: 80%;
+  background-color: white;
+  border-left: 4px solid rgb(35, 200, 100);
+  color: rgb(35, 200, 100);
+}
