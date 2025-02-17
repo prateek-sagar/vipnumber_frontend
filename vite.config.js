@@ -13,7 +13,11 @@ export default defineConfig({
         about: resolve(__dirname, "src/about/index.html"),
         contact: resolve(__dirname, "src/contact-us/index.html"),
         phone_words: resolve(__dirname, "src/phone-words/index.html"),
-        premium_numbers: resolve(__dirname, "src/numbers-list/index.html"),
+        number_list: resolve(__dirname, "src/numbers-list/index.html"),
+        booking_numbers: resolve(__dirname, "src/booking-page/index.html"),
+        vendor_dashboard: resolve(__dirname, "src/vendor-dashboard/index.html"),
+        login: resolve(__dirname, "src/login-page/index.html"),
+        
       },
     },
   },

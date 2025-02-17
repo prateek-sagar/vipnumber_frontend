@@ -3,242 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .step {
-        display: none;
-      }
 
-      .active {
-        display: block;
-      }
-    </style>
+    <title>Vip Number</title>
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="../index.css" />
   </head>
+  <link rel="stylesheet" href="../login-page/loginstyle.css">
   <body>
-    <!-- log-in section -->
+   <div id="header"></div>
+    <div class="bg-gray-100 flex justify-center items-center min-h-screen">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden max-w-4xl w-full md:flex">
+        <div class="md:w-1/2 bg-[#B83503] flex justify-center items-center p-4">
+            <img src="../resources/confident_man_converted.png" alt="Login Image" class="rounded-lg max-w-full h-auto ">
+        </div>
+            
 
-    <h1 class="text-center mt-10 text-3xl font-bold text-blue-950">Log In</h1>
-
-    <div
-      class="flex items-center space-x-4 justify-center h-[100px] absolute w-full"
-    >
-      <!-- Label for the toggle button -->
-      <span class="text-lg">ADMIN</span>
-
-      <!-- Toggle button container -->
-      <label for="toggle" class="relative inline-block w-12 h-6">
-        <input type="checkbox" id="toggle" class="peer hidden" />
-
-        <!-- Background of the toggle -->
-        <span
-          class="absolute inset-0 bg-gray-300 rounded-full transition-all peer-checked:bg-blue-500"
-        ></span>
-
-        <!-- Circle of the toggle -->
-        <span
-          class="absolute top-0 left-0 w-6 h-6 bg-white rounded-full transition-all peer-checked:left-6"
-        ></span>
-      </label>
-
-      <!-- Text to indicate toggle state -->
-      <span id="toggle-state" class="text-sm text-gray-600">OFF</span>
-    </div>
-
-    <script>
-      const toggle = document.getElementById("toggle");
-      const toggleState = document.getElementById("toggle-state");
-
-      toggle.addEventListener("change", () => {
-        if (toggle.checked) {
-          toggleState.textContent = "ON";
-        } else {
-          toggleState.textContent = "OFF";
-        }
-      });
-    </script>
-    <div class="h-[100vh] w-full flex justify-center items-center bg-[#36384d]">
-      <div
-        class="rounded-[20px] h-[60vh] w-[60vw] flex flex-col p-4 lg:flex-row-reverse outline bg-white"
-      >
-        <div class="w-full rounded-[20px]">
-          <!-- login form when this state is active -->
-          <!-- login button for active the form or state and deactive adjacent form -->
-          Login
-
-          <form
-            id="loginform"
-            action="/login"
-            method="POST"
-            class="w-[100%] bg-pink-100"
-          >
-            <div class="input-group flex flex-col justify-center relative">
-              <label for="userid">User Id</label>
-              <input
-                type="text"
-                id="userid"
-                name="userid"
-                name="userid"
-                class="pl-6 p-3 w-full border border-gray-300"
-                placeholder="Enter Your Registered Mobile No/Email"
-              />
-              <i
-                class="fa-solid fa-envelope absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-              ></i>
-            </div>
-            <div class="input-group flex flex-col justify-center relative">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                class="pl-6 p-3 w-full border border-gray-300"
-                placeholder="Enter Your Password"
-              />
-              <i
-                class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-              ></i>
-            </div>
-            <div class="flex justify-between mt-4 text-cyan-50">
-              <button
-                type="Submit"
-                class="btn px-3 border rounded-lg bg-blue-950"
-              >
-                Login
-              </button>
-              <button
-                type="Submit"
-                class="btn px-3 border rounded-lg bg-red-700"
-              >
-                Forget Password
-              </button>
+            <div class="md:w-1/2 p-8 flex flex-col justify-center">
+           
+                <h2 class="text-2xl font-bold text-primary mb-4 text-center">LOGIN</h2>
+                
+                <div class="relative mb-3">
+                    <i class="fas fa-user absolute left-3 top-4 text-gray-500"></i>
+                    <input type="text" placeholder="Enter your Registered Mobile No / Email" 
+                           class="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                
+                <div class="relative mb-3">
+                    <i class="fas fa-lock absolute left-3 top-4 text-gray-500"></i>
+                    <input type="password" placeholder="Enter your password" 
+                           class="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                
+                <a href="forgetpassword.html" class="text-primary text-sm mb-3 block text-right">Forgot Password?</a>
+                <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-green-600 transition flex items-center justify-center">
+                    <i class="fas fa-sign-in-alt mr-2"></i> LOGIN
+                </button>
+                
+                <span class="block text-center my-3 font-semibold">OR</span>
+                
+                <a href="Otp.html" class="w-full border border-primary text-primary py-3 rounded-lg hover:bg-primary hover:text-white transition flex items-center justify-center">
+                    <i class="fas fa-key mr-2"></i> LOGIN With OTP
+                </a>
+                
+                <p class="text-center mt-4">NOT A CUSTOMER?</p>
+                <a href="registration.html" class="w-full mt-2 border border-primary text-primary py-3 rounded-lg hover:bg-primary hover:text-white transition flex items-center justify-center">
+                    <i class="fas fa-user-plus mr-2"></i> Create an account
+                </a>
+                    
             </div>
           </form>
         </div>
-        <div class="w-full flex flex-col lg:w-1/2">
-          <!-- signup form when this state is active -->
-          <!-- signup button for active the form or state and deactive adjacent from -->
-          Signup
-          <form
-            id="signupform "
-            class="step step-1 active"
-            action=""
-            method="POST"
-            class="w-[100%] bg-pink-100"
-          >
-            <div>
-              <div class="input-group flex flex-col justify-center relative">
-                <label for="userid">Full Name</label>
-                <input
-                  type="text"
-                  id="userid"
-                  name="userid"
-                  name="userid"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Enter Your Full Name"
-                />
-                <i
-                  class="fa-solid fa-user absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-              <div class="input-group flex flex-col justify-center relative">
-                <label for="password">Create Password</label>
-                <input
-                  type="password"
-                  id="create_password"
-                  name="password"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Enter Your Password"
-                />
-                <i
-                  class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-              <div class="input-group flex flex-col justify-center relative">
-                <label for="password">Confirm Password</label>
-                <input
-                  type="password"
-                  id="con_password"
-                  name="password"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Confirm Your Password"
-                />
-                <i
-                  class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-              <div class="flex justify-between mt-4 text-cyan-50">
-                <div
-                  id="took-next-step"
-                  class="btn px-3 border rounded-lg bg-blue-950 cursor-pointer"
-                >
-                  Next
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                id="signupform"
-                class="step step-2 input-group flex flex-col justify-center relative overflow-hidden bg-gray-200"
-              >
-                <label for="mobile_number">Mobile Number</label>
-                <input
-                  type="Nummber"
-                  id="number"
-                  name="mob_number"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Enter Your Number "
-                />
-                <i
-                  class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-              <div class="input-group flex flex-col justify-center relative">
-                <label for="email">Email</label>
-                <input
-                  type="Nummber"
-                  id="Email"
-                  name="Email"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Enter Your Email "
-                />
-                <i
-                  class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-              <div class="input-group flex flex-col justify-center relative">
-                <label for="password">Email</label>
-                <input
-                  type="Nummber"
-                  id="Email"
-                  name="Email"
-                  class="pl-6 p-3 w-full border border-gray-300"
-                  placeholder="Enter Your Email "
-                />
-                <i
-                  class="fa-solid fa-key absolute left-2 pt-6 top-1/2 items-center -translate-y-1/2"
-                ></i>
-              </div>
-
-              <div class="flex justify-between mt-4 text-cyan-50">
-                <div
-                  id="took-previous-step"
-                  class="btn px-3 border rounded-lg bg-blue-950"
-                >
-                  Previous
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
-
-    <script type="module" src="../../main.js"></script>
+   
+    <div id="footer"></div>
+    
+    
     <script
       src="https://kit.fontawesome.com/088be698bc.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/src/components/script.js/signupform.js"></script>
+    <script type="module" src="../../main.js"></script>
   </body>
 </html>

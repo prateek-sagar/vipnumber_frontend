@@ -4,14 +4,7 @@ export default function footer() {
     <div class="w-full h-1/2 flex bg-white px-8 py-10 lg:px-20">
         <div class = "flex justify-between flex-col w-full lg:flex-row">
             <div class="">
-                <h3 class = "text-2xl my-2 text-[#474b67] font-bold ">QUICK LINKS</h3>
-                <ul class = "list-none space-y-1">
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Career</a></li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Testimonial</a></li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Video Gallery</a></li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Image Gallery</a></li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Blogs</a></li>
-                </ul>
+                <img src="" />
             </div>
             <div class="footer-content-box">
                 <h3 class = "text-2xl my-2 text-[#474b67] font-bold ">SUPPORT</h3>

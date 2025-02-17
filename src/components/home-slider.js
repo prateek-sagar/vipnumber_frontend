@@ -1,4 +1,18 @@
 import { tns } from "tiny-slider";
+import leftArrowImage from "../resources/left-arrow.png";
+import rightArrowImage from "../resources/right-arrow.png";
+
+const leftArrow = `
+  <div>
+    <img src="${leftArrowImage}"/>
+  </div>
+`;
+
+const rightArrow = `
+  <div>
+    <img src="${rightArrowImage}"/>
+  </div>
+`;
 
 export var slider = tns({
   container: "#slider",
@@ -9,6 +23,6 @@ export var slider = tns({
   controls: true,
   controlsPosition: "bottom",
   nav: false,
-  controlsText: ["<", ">"],
+  controlsText: [leftArrow, rightArrow],
   mouseDrag: true,
 });
