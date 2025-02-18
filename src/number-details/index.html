@@ -3,25 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>number-details</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VIP Number Details</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <div id="filter-container">
-            
+<div id="header"></div>
+    <section
+      class="flex w-full h-[50vh] px-8 bg-cover justify-between bg-[url('..\src\resources\contact.jpeg')]">
+    
+      <div class=" flex flex-col justify-center font pl-16" >
+        <span class=" h-auto  text-[2rem] leading-[2rem] font-bold">Number Detail – VIPNUMBERWEB </span>
+        <div>Your number details
+          </div>
+       </div>
+      <div class="flex  items-center">
+        <img src="../resources/privacy-removebg.png" alt="banner"  class="hidden sm:block" />
+      </div>
+    </section>
+<div class="bg-gray-100 p-4">
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <!-- Product Details -->
+        <div class="border p-4 rounded-lg border-purple-500">
+            <div class="text-red-500 font-bold">Save 343/-</div>
+            <div class="text-purple-500 font-semibold">Category: Normal Fancy Numbers</div>
+            <div class="text-2xl font-bold border p-4 mt-2">97-185-90-465</div>
+            <div class="mt-4 text-lg font-bold">Rs.2,025 <span class="line-through text-gray-500">Rs.2,368</span> <span class="text-blue-500">Discount</span></div>
+            <div class="mt-2">Features: <span class="font-semibold">Total 54 | Sum 9</span></div>
+            <div class="mt-2">Tags: <span class="bg-gray-200 px-2 py-1 rounded">Others</span></div>
+            <div class="mt-4 flex space-x-4">
+                <button onclick="buyNow()" class="bg-blue-500 text-white px-4 py-2 rounded">Buy Now</button>
+                <button onclick="addToCart()" class="bg-purple-500 text-white px-4 py-2 rounded">Add to Cart</button>
+            </div>
         </div>
-        <div class="top">
-            <img src="" alt="">
-
+        
+        <!-- Family & Business Pack -->
+        <div class="mt-6 bg-purple-600 text-white p-4 rounded-lg">
+            <h2 class="text-lg font-bold flex items-center"><i class="fas fa-users mr-2"></i> Family & Business Pack</h2>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-white text-black p-4 rounded-lg shadow">
+                    <div class="flex justify-between"><span>98886 91118</span> <span>₹8,619/-</span></div>
+                    <button class="bg-blue-500 text-white mt-2 w-full py-1 rounded">Book Now</button>
+                </div>
+                <!-- Repeat for other numbers -->
+            </div>
         </div>
-        <div class="top-section"> 
-          <div><img src="../resources/" alt=""></div>
-          <div><p>Who Pays First, Will Get Only!<br>💎 Secures the Best VIP Number!<br>VIP is Just a Step Away!</p></div>
-          <div></div>
+        
+        <!-- FAQs -->
+        <div class="mt-6">
+            <h2 class="text-xl font-bold">Frequently Asked Questions</h2>
+            <div class="mt-2 bg-gray-200 p-4 rounded">
+                <div class="flex justify-between cursor-pointer py-2" onclick="toggleFaq(this)">How will my payment be safe? <i class="fas fa-chevron-down"></i></div>
+                <div class="flex justify-between cursor-pointer py-2" onclick="toggleFaq(this)">How to buy a VIP mobile number? <i class="fas fa-chevron-down"></i></div>
+                <div class="flex justify-between cursor-pointer py-2" onclick="toggleFaq(this)">Can I get an Airtel or Vodafone number of my choice? <i class="fas fa-chevron-down"></i></div>
+            </div>
+        </div>
+        
+        <!-- Advertisements -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="h-32 bg-green-500"></div>
+            <div class="h-32 bg-green-900"></div>
         </div>
     </div>
 
-    <script type="module" src="../page-js/"></script>
+    <script>
+        function buyNow() {
+            alert('Proceeding to Buy Now');
+        }
+        function addToCart() {
+            alert('Added to Cart');
+        }
+        function toggleFaq(element) {
+            element.nextElementSibling?.classList.toggle('hidden');
+        }
+    </script>
+ </div>
+ <div id="footer"></div>
 </body>
+
+    <script type="module" src="../../main.js"></script>
 </html>
