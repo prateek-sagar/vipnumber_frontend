@@ -1,0 +1,5 @@
+.number-entry-card:hover .buy-page-link,
+.number-entry-card:hover .add-to-cart-link {
+  background-color: white;
+  color: rgb(35, 200, 100);
+}
