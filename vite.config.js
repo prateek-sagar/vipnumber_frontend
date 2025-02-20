@@ -26,6 +26,13 @@ export default defineConfig({
           __dirname,
           "src/authentication/forgetpassword.html"
         ),
+
+        refund_policy: resolve(__dirname, "src/refund-policy/index.html"),
+        privacy_policy: resolve(__dirname, "src/privacy-policy/index.html"),
+        terms_and_condition: resolve(
+          __dirname,
+          "src/terms-and-condition/index.html"
+        ),
       },
     },
   },

@@ -6,8 +6,8 @@ export default function header() {
             <div class="logo-container flex items-center w-48 h-full overflow-hidden">
                 <img class="w-full object-cover" src="${blackLogo}" />
             </div>
-            <nav class="w-fit">
-                <ul class="hidden h-full justify-center items-center space-x-6 font-medium text-lg md:flex" >
+            <nav class="w-full justify-end">
+                <ul class="hidden h-full justify-end items-center space-x-6 font-medium text-lg md:flex" >
                     <li class="border-b-2 border-transparent hover:border-white active-header-link">
                         <a href="/">
                             Home
