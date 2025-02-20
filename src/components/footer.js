@@ -9,7 +9,9 @@ export default function footer() {
             <div class="footer-content-box">
                 <h3 class = "text-2xl my-2 text-[#474b67] font-bold ">SUPPORT</h3>
                 <ul class = "list-none space-y-1">
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Contact Us</a></li>
+                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">
+                        <a href="/contact-us">Contact Us</a>
+                    </li>
                     <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">FAQ'S</a></li>
                     <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">Why us?</li>
                 </ul>
@@ -17,9 +19,15 @@ export default function footer() {
             <div class="footer-content-box">
                 <h3 class = "text-2xl my-2 text-[#474b67] font-bold ">WE ACCEPT</h3>
                 <ul class = "list-none space-y-1">
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300"><a href="">Terms & conditions</a></li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">Privcy policy</li>
-                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">Refund policy</li>
+                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">
+                        <a href="/terms-and-condition">Terms & conditions</a>
+                    </li>
+                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">
+                    <a href="/privacy-policy">Privacy policy</a>
+                    </li>
+                    <li class = "relative w-fit hover:before:w-1/2 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-blue-500 before:transition-all before:duration-300">
+                    <a href="/refund-policy">Refund policy</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-content-box">
