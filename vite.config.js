@@ -35,6 +35,7 @@ export default defineConfig({
         ),
         number_details: resolve(__dirname, "src/number-details/index.html"),
         cart: resolve(__dirname, "src/add-to-cart/index.html"),
+        checkout: resolve(__dirname, "src/checkout/index.html"),
       },
     },
   },
