@@ -9,7 +9,6 @@
       .cart-container {
         width: 90%;
         max-width: 1200px;
-        margin: auto;
         background: white;
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -94,56 +93,30 @@
   </head>
   <body>
     <div id="header"></div>
-    <div class="cart-container">
-      <h2>YOUR CART</h2>
-      <div class="cart-item">
-        <img src="#" alt="Product Image" />
-        <div class="details">
-          <p><strong>Viva Leaf Tulsi Basil Honey</strong></p>
-          <p>Price: <strong>$14.00</strong></p>
-          <p>Quantity: 1</p>
-          <p>Subtotal: <strong>$14.00</strong></p>
+    <div class="flex justify-center items-center py-10">
+      <div class="cart-container">
+        <h2 class="text-center text-3xl font-bold">YOUR CART</h2>
+        <div class="buy-numbers"></div>
+        <div class="checkout-section">
+          <p>Subtotal: <strong id="sub-total">2000</strong></p>
+          <p>Grand Total: <strong id="total">2000</strong></p>
+          <button class="bg-primary text-white rounded-md px-5 py-3">
+            PROCEED TO CHECKOUT
+          </button>
+          <button class="button" style="background-color: gray">
+            CONTINUE SHOPPING
+          </button>
         </div>
-      </div>
-
-      <h3>MANY CUSTOMERS ADDED THE FOLLOWING:</h3>
-      <div class="suggestions-container">
-        <div class="suggested-item">
-          <img src="#" alt="Suggested Product" />
-          <div class="details">
-            <p><strong>Snack Attack</strong></p>
-            <p>Price: <strong>$30.00</strong></p>
-          </div>
+        <h3 class="my-2 text-xl font-bold">Other Premium Numbers:</h3>
+        <div class="suggestions-container">
+          <div class="number-card"></div>
+          <div class="number-card"></div>
+          <div class="number-card"></div>
         </div>
-        <div class="suggested-item">
-          <img src="#" alt="Suggested Product" />
-          <div class="details">
-            <p><strong>Cacao Sampaka Specialty Chocolate Collection</strong></p>
-            <p><span style="color: red">SALE</span>: <strong>$50.00</strong></p>
-          </div>
-        </div>
-        <div class="suggested-item">
-          <img src="#" alt="Suggested Product" />
-          <div class="details">
-            <p><strong>Saladini Selatio Crescent Knife</strong></p>
-            <p>Price: <strong>$125.00</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="checkout-section">
-        <p style="color: orange">
-          <strong>$86.00 away from FREE Shipping</strong>
-        </p>
-        <p>Subtotal: <strong>$14.00</strong></p>
-        <p>Grand Total: <strong>$14.00</strong></p>
-        <button class="button">PROCEED TO CHECKOUT</button>
-        <button class="button" style="background-color: gray">
-          CONTINUE SHOPPING
-        </button>
       </div>
     </div>
     <div id="footer"></div>
     <script type="module" src="../../main.js"></script>
+    <script type="module" src="../page-js/addToCart.js"></script>
   </body>
 </html>

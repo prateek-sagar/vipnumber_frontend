@@ -2,6 +2,7 @@ import fetching_premium_numbers from "../components/fetching_premium_numbers";
 import number_categories from "../components/number_categories";
 import searchBar from "../components/searchBar";
 import trending_numbers from "../components/trending_numbers";
+import numberCardNavigation from "./numberCardNavigation";
 document.getElementById("highlighting-premium-grid").innerHTML =
   fetching_premium_numbers();
 document.getElementById("trending-grid").innerHTML = trending_numbers();
@@ -14,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
   container.innerHTML += images;
 });
 
-document.getElementById("filter-trigger").addEventListener("click", () => {});
+numberCardNavigation();

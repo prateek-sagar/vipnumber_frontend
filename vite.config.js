@@ -33,6 +33,8 @@ export default defineConfig({
           __dirname,
           "src/terms-and-condition/index.html"
         ),
+        number_details: resolve(__dirname, "src/number-details/index.html"),
+        cart: resolve(__dirname, "src/add-to-cart/index.html"),
       },
     },
   },

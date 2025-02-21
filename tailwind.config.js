@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         sans: ["Open Sans", "sans-serif"],
+        elegant: ["Frank Ruhl Libre"],
       },
       colors: {
         primary: {
