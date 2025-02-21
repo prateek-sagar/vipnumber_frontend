@@ -14,6 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
   container.innerHTML += images;
 });
 
-document.getElementById("filter-trigger").addEventListener("click", () => {
-  
-});
+document.getElementById("filter-trigger").addEventListener("click", () => {});

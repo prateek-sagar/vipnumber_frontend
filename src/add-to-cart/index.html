@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../index.css" />
+    <style>
+      .cart-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .cart-item,
+      .suggested-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+      .cart-item img,
+      .suggested-item img {
+        width: 120px;
+        height: 120px;
+        background-color: rgb(87, 197, 75);
+        flex-shrink: 0;
+      }
+      .details {
+        margin-left: 20px;
+        flex-grow: 1;
+      }
+      .checkout-section {
+        text-align: right;
+        margin-top: 20px;
+        background: #fff;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #54d94f;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px 5px;
+        border: none;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #1bf149;
+      }
+      .suggestions-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+      }
+      .suggested-item {
+        flex: 1 1 calc(33% - 15px);
+        max-width: calc(33% - 15px);
+      }
+
+      @media (max-width: 768px) {
+        .cart-item,
+        .suggested-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .cart-item img,
+        .suggested-item img {
+          width: 100%;
+          height: auto;
+        }
+        .details {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        .suggestions-container {
+          flex-direction: column;
+        }
+        .suggested-item {
+          max-width: 100%;
+        }
+        .checkout-section {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="cart-container">
+      <h2>YOUR CART</h2>
+      <div class="cart-item">
+        <img src="#" alt="Product Image" />
+        <div class="details">
+          <p><strong>Viva Leaf Tulsi Basil Honey</strong></p>
+          <p>Price: <strong>$14.00</strong></p>
+          <p>Quantity: 1</p>
+          <p>Subtotal: <strong>$14.00</strong></p>
+        </div>
+      </div>
+
+      <h3>MANY CUSTOMERS ADDED THE FOLLOWING:</h3>
+      <div class="suggestions-container">
+        <div class="suggested-item">
+          <img src="#" alt="Suggested Product" />
+          <div class="details">
+            <p><strong>Snack Attack</strong></p>
+            <p>Price: <strong>$30.00</strong></p>
+          </div>
+        </div>
+        <div class="suggested-item">
+          <img src="#" alt="Suggested Product" />
+          <div class="details">
+            <p><strong>Cacao Sampaka Specialty Chocolate Collection</strong></p>
+            <p><span style="color: red">SALE</span>: <strong>$50.00</strong></p>
+          </div>
+        </div>
+        <div class="suggested-item">
+          <img src="#" alt="Suggested Product" />
+          <div class="details">
+            <p><strong>Saladini Selatio Crescent Knife</strong></p>
+            <p>Price: <strong>$125.00</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-section">
+        <p style="color: orange">
+          <strong>$86.00 away from FREE Shipping</strong>
+        </p>
+        <p>Subtotal: <strong>$14.00</strong></p>
+        <p>Grand Total: <strong>$14.00</strong></p>
+        <button class="button">PROCEED TO CHECKOUT</button>
+        <button class="button" style="background-color: gray">
+          CONTINUE SHOPPING
+        </button>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="../../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.active-header-link {
+  border-bottom: 2px solid white;
+}
+
+.header-login-btn {
+  background: #fff;
+  color: black;
+  border-radius: 999px;
+  padding: 2px 12px;
+  cursor: pointer;
+}
+
+.header-login-btn:hover {
+  background: white;
+  color: rgb(40, 200, 100);
+}
+
+.header-singup-btn {
+  cursor: pointer;
+  padding: 2px 12px;
+  border-radius: 999px;
+}
+
+.header-singup-btn:hover {
+  background: white;
+  color: rgb(40, 200, 100);
+}

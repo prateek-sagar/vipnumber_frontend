@@ -14,6 +14,7 @@ export default function numberCard() {
         </div>
             ${numberEntry.number}
             <p class="text-[18px] text-gray-300">Total 60=6=6</p>
+            <a href="/number-details" class="text-[18px] text-gray-300">View Details</a>
             <div class="text-sm absolute bottom-4 flex gap-2">
             <a href="/booking-page"
                     class="bg-green-500 text-white px-4 py-1 gap-2 flex rounded-full md:px-6 buy-page-link"
